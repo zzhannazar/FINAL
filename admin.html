@@ -1,0 +1,72 @@
+
+<html>
+    <head>
+        <title>
+            Profile 
+        </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="adminstyle.css">
+        </head>
+      <body>
+           <nav class="menu">
+        <ul class="menu_main">
+          <li><a href="index.html">Main</a></li>
+          <li><a href="planets.html">Planets</a></li>
+          <li><a href="sun.html">Sun</a></li>
+          <li><a href="moon.html">Moon</a></li>
+          <li><a href="cosmo-photos.html">Cosmo-photos</a></li>
+          <li><a href="articles.html">Articles</a></li>
+          <li><a href="login.html">log in</a></li>
+          <li><a href="admin.html">Admin</a></li>
+        </ul>
+     </nav>
+
+    <section>
+    <span class="star"></span>
+    <span class="star"></span>
+    <span class="star"></span>
+    <span class="star"></span>
+    <span class="star"></span>
+    <span class="star"></span>
+    <span class="star"></span>
+    <span class="star"></span>
+    <span class="star"></span>
+    <span class="star"></span>
+  </section>
+
+      
+      <div class="adminmain">
+        <h2 class="admin__text">Profile</h2>
+        <button class="admin__logout" onclick="Logout();" style="float: right;">Logout</button>
+        <hr>
+        <h3  class="admin__text">Welcome</h3>
+        <h4  class="admin__text">Name: <script>document.write(localStorage.getItem('name'));</script></h4>
+      
+        <div class="admin">
+    <div class="admin__button">
+          <button onclick="FunctionCreate()" class="admin__create">CREATE</button>
+          <button onclick="FunctionRead()" class="admin__read">READ</button>
+          <button onclick="FunctionUpdate()" class="admin__update">UPDATE</button>
+          <button onclick="FunctionDelete()" class="admin__delete">DELETE</button>
+        </div>
+        <div class="blocks left">
+        <form action="javascript:;" class="form">
+          <input class="admin__email" type="email" name="Email"  id="email"  placeholder="Email" aria-required="true"  />
+          <input class="admin__name" type="text" name="name" id="name" placeholder="Name"  aria-required="true" />
+          <input class="admin__password" type="password" name="password" id="password" placeholder="password" aria-required="true" />
+        </form>
+      </div>
+        <div class="table-wrapper">
+          <table class="table">
+            <thead></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+      </body>
+      </html>

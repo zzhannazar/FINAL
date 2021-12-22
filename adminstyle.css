@@ -1,0 +1,269 @@
+
+body {
+font-family: 'Poppins', sans-serif;
+background: url("images/cosmos.jpg") no-repeat left top;
+}
+
+
+
+.adminmain {
+	border: 1px solid darkblue;
+	background-color: #161e63;
+	width: 700px;
+	height: 500px;
+	margin: 0 auto;
+	justify-content: center;
+	padding: 100px;
+  color: white;
+}
+
+.admin__text {
+	font-size: 20px;
+}
+
+.admin__create {
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px 20px;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
+  background-size: 100% auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+  transition: .5s;
+}
+
+.admin__read {
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px 20px;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
+  background-size: 100% auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+  transition: .5s;
+}
+
+.admin__update {
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px 20px;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
+  background-size: 100% auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+  transition: .5s;
+}
+
+.admin__delete {
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px 20px;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
+  background-size: 100% auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+  transition: .5s;
+}
+
+
+.admin__email {
+	border: 1px solid darkblue;
+	border-radius: 10px;
+	width: 500px;
+	height: 50px;
+	margin: 10px;
+}
+.admin__name {
+	border: 1px solid darkblue;
+	border-radius: 10px;
+	width: 500px;
+	height: 50px;
+	margin: 10px;
+}
+.admin__password {
+	border: 1px solid darkblue;
+	border-radius: 10px;
+	width: 500px;
+	height: 50px;
+	margin: 10px;
+}
+
+.table {
+	border: 1px solid darkblue;
+	border-radius: 10px;
+	width: 500px;
+	height: 50px;
+	margin: 10px;
+
+}
+
+.admin__logout {
+text-decoration: none;
+  display: inline-block;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px 20px;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
+  background-size: 100% auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+  transition: .5s;
+
+}
+
+
+.menu {
+  position: fixed;
+  z-index: 1;
+  width: 100vw;
+}
+.menu_main {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 3px;
+    background-color: #000;
+    height: 5vh;
+    margin: 0;
+}
+.menu_main a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  height: 5vh;
+  width: 8vw;
+  text-align: center;
+}
+.menu_main a:hover {
+  background-color: #090994;
+  transition: width 0.5s ease-out; 
+}
+.menu_main li {
+  padding-right: 2px;
+  display: flex;
+  align-items: center;
+}
+
+.table {
+  color: white;
+  background-color: #6495ED;
+}
+
+ .star {
+    position: absolute;
+    width: 4px;/*ширина звезды*/
+    height: 4px;/*высота звезды*/
+    background: #fff;/*цвет звезды*/
+    border-radius: 50%;/*закоугление углов*/
+    box-shadow: 0 0 0 4px rgba(255,255,255,.1),
+        0 0 0 8px rgba(255,255,255,.1),
+        0 0 20px rgba(255,255,255,1);
+    animation: animate 3s linear infinite;
+}    
+ .star:before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 300px;
+    height: 1px;
+    background: linear-gradient(90deg,#fff,transparent);
+}  
+ @keyframes animate{
+    0%
+    {
+        transform: rotate(-45deg) translateX(0);
+    }
+    70%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        transform: rotate(-45deg) translateX(-1000px);
+        opacity: 0;
+    }
+}  
+.star:nth-child(1){
+    top: 0px;/*верхняя координата*/
+    right: 0px;/*правая координата*/
+    animation-delay: 0;/*задержка анимации*/
+    animation-duration: 1s;/*длительность анимации*/
+}
+.star:nth-child(2){
+    top: 0px;
+    right: 80px;
+    animation-delay: 0.2s;
+    animation-duration: 3s;
+}
+.star:nth-child(3){
+    top: 80px;
+    right: 0px;
+    animation-delay: 0.4s;
+    animation-duration: 2s;
+}
+.star:nth-child(4){
+    top: 0px;
+    right: 180px;
+    animation-delay: 0.6s;
+    animation-duration: 1.5s;
+}
+.star:nth-child(5){
+    top: 0px;
+    right: 400px;
+    animation-delay: 0.8s;
+    animation-duration: 2.5s;
+}
+.star:nth-child(6){
+    top: 0px;
+    right: 600px;
+    animation-delay: 1s;
+    animation-duration: 3s;
+}
+.star:nth-child(7){
+    top: 300px;
+    right: 0px;
+    animation-delay: 1.2s;
+    animation-duration: 1.75s;
+}
+.star:nth-child(8){
+    top: 0px;
+    right: 700px;
+    animation-delay: 1.4s;
+    animation-duration: 1.25s;
+}
+.star:nth-child(9){
+    top: 0px;
+    right: 1000px;
+    animation-delay: 0.75s;
+    animation-duration: 2.25s;
+}
+.star:nth-child(10){
+    top: 0px;
+    right: 450px;
+    animation-delay: 2.75s;
+    animation-duration: 2.25s;
+}    

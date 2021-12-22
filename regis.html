@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Registration form
+        </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="regisstyle.css">
+  
+      </head>
+      <body>
+<script type="text/javascript" src="regis.js"></script>
+           <nav class="menu">
+        <ul class="menu_main">
+          <li><a href="index.html">Main</a></li>
+          <li><a href="planets.html">Planets</a></li>
+          <li><a href="sun.html">Sun</a></li>
+          <li><a href="moon.html">Moon</a></li>
+          <li><a href="cosmo-photos.html">Cosmo-photos</a></li>
+          <li><a href="articles.html">Articles</a></li>
+          <li><a href="login.html">log in</a></li>
+          <li><a href="admin.html">Admin</a></li>
+        </ul>
+     </nav>
+
+    
+
+        <section>      
+      <div class="form">
+        <p id="registr" class="form__text"> Registration </p>
+        <form id="reg" onsubmit="return check()" style="display: none;" >
+         <div class="form__email">
+            <label for="email">Email:</label>
+            <input type="email" class="form__email1" id="email" placeholder="Enter email" name="email"><br>
+          </div>
+        <div class="form__name">
+                <label for="name">Name:</label>
+                <input type="text" class="form__name1" id="name" placeholder="Enter email" name="email"><br>
+        </div>
+          <div class="form__password">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form__password1" id="password" placeholder="Enter password" name="pwd"><br>
+          </div>
+         
+          <button type="button" onclick="addData()" id="save_btn" class="form__submit">Submit</button>
+        </form>
+      </div>
+    </section>
+      
+      </body>
+
+      </html>

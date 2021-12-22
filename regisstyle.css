@@ -1,0 +1,112 @@
+
+body {
+font-family: 'Poppins', sans-serif;
+background: url("images/cosmos.jpg") no-repeat left top;
+}
+
+
+
+.form {
+	border: 1px solid darkblue;
+	background-color: #161e63;
+	width: 500px;
+	height: 400px;
+	margin: 0 auto;
+	justify-content: center;
+	padding: 100px;
+
+}
+
+
+
+.form__text {
+	font-size: 40px;
+	padding:  0;
+	margin: 10px;
+	box-sizing: border-box;
+	text-decoration: underline;
+	color: white;
+
+}
+
+.form__email1 {
+	border: 1px solid darkblue;
+	border-radius: 10px;
+	width: 500px;
+	height: 50px;
+	margin: 10px;
+}
+
+.form__password1 {
+	border: 1px solid darkblue;
+	border-radius: 10px;
+	width: 500px;
+	height: 50px;
+	margin: 10px;
+}
+
+.form__submit {
+	border: 1px solid darkblue;
+	border-radius: 10px;
+	width: 500px;
+	height: 50px;
+	margin: 10px;
+	background-color: #4682b4;
+}
+
+.form__name1 {
+	border: 1px solid darkblue;
+	border-radius: 10px;
+	width: 500px;
+	height: 50px;
+	margin: 10px;
+}
+
+
+label {
+	position: relative;
+	left: 8px;
+}
+button:hover {
+	background-color: #a9d6eb;
+	border: none;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+}
+.menu {
+	position: fixed;
+	z-index: 1;
+	width: 100vw;
+}
+.menu_main {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 3px;
+    background-color: #000;
+    height: 6vh;
+    margin: 0;
+}
+.menu_main a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 16px;
+	height: 5vh;
+	width: 10vw;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 3px 4px 3px 4px;
+    border: none;
+    border-radius: 10px;
+        margin: 0px 1px 1px 1px;
+}
+.menu_main a:hover {
+	background-color: #090994;
+	transition: width 0.5s ease-out; 
+}
+.menu_main li {
+	padding-right: 2px;
+	display: flex;
+	align-items: center;
+}
+
