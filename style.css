@@ -1,0 +1,995 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@500&family=Poppins:wght@200;300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+         -o-box-sizing: border-box;
+           -box-sizing: border-box;
+}
+
+body {
+font-family: 'Poppins', sans-serif;
+}
+.menu {
+    position: fixed;
+    z-index: 1;
+    width: 100vw;
+      height: 5vh;
+}
+.menu_main {
+    list-style: none;
+    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+
+    background-color: #000;
+
+}
+.menu_main a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    height: 6vh;
+    width: 10vw;
+    text-align: center;
+    text-transform: uppercase;
+        padding: 3px 4px 3px 4px;
+    border: 1px solid black;
+    border-radius: 10px;
+        margin: 0px 1px 1px 1px;
+            text-align: center;
+}
+.menu_main a:hover {
+    background-color: #090994;
+    transition: width 0.5s ease-out; 
+}
+.menu_main li {
+    padding-right: 2px;
+    display: flex;
+    align-items: center;
+}
+
+section {
+    width: 100%;
+    height: 750px;
+    background: url("images/cosmos.jpg") no-repeat left top;
+    position: relative;
+    
+}
+ .star {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(255,255,255,.1),
+        0 0 0 8px rgba(255,255,255,.1),
+        0 0 20px rgba(255,255,255,1);
+    animation: animate 3s linear infinite;
+}    
+ .star:before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 300px;
+    height: 1px;
+    background: linear-gradient(90deg,#fff,transparent);
+}  
+ @keyframes animate{
+    0%
+    {
+        transform: rotate(-45deg) translateX(0);
+    }
+    70%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        transform: rotate(-45deg) translateX(-1000px);
+        opacity: 0;
+    }
+}  
+.star:nth-child(1){
+    top: 0px;
+    right: 0px;
+    animation-delay: 0;
+    animation-duration: 1s;
+}
+.star:nth-child(2){
+    top: 0px;
+    right: 80px;
+    animation-delay: 0.2s;
+    animation-duration: 3s;
+}
+.star:nth-child(3){
+    top: 80px;
+    right: 0px;
+    animation-delay: 0.4s;
+    animation-duration: 2s;
+}
+.star:nth-child(4){
+    top: 0px;
+    right: 180px;
+    animation-delay: 0.6s;
+    animation-duration: 1.5s;
+}
+.star:nth-child(5){
+    top: 0px;
+    right: 400px;
+    animation-delay: 0.8s;
+    animation-duration: 2.5s;
+}
+.star:nth-child(6){
+    top: 0px;
+    right: 600px;
+    animation-delay: 1s;
+    animation-duration: 3s;
+}
+.star:nth-child(7){
+    top: 300px;
+    right: 0px;
+    animation-delay: 1.2s;
+    animation-duration: 1.75s;
+}
+.star:nth-child(8){
+    top: 0px;
+    right: 700px;
+    animation-delay: 1.4s;
+    animation-duration: 1.25s;
+}
+.star:nth-child(9){
+    top: 0px;
+    right: 1000px;
+    animation-delay: 0.75s;
+    animation-duration: 2.25s;
+}
+.star:nth-child(10){
+    top: 0px;
+    right: 450px;
+    animation-delay: 2.75s;
+    animation-duration: 2.25s;
+}    
+
+section h1 {
+	z-index: 1;
+	color: #fff;
+    display: grid;
+position: relative;
+top: 30vh;
+left: 40vw;
+	font-size: 50px;
+}
+section h3 {
+	z-index: 1;
+	color: #fff;
+position: relative;
+top: 30vh;
+left: 40vw;
+	font-size: 25px;
+}
+
+.cosmo_info {
+	z-index: 1;
+	color: #c8c8fa;
+background-color: rgba(132, 132, 150, 0.5);
+position: relative;
+top: 482px;
+width: 100%;
+padding-left: 20px;
+height: 155px;
+}
+.cosmo_info p {
+	font-size: 14px;
+	font-style: 'Arial';
+	width: 555px;
+	text-align: left;
+	padding-top: 10px;
+
+}
+
+main {
+    background-color: rgba(132, 132, 150, 0.3);
+    height: 
+}
+.articles {
+   position: relative;
+      top: 15vh;
+      left: 14vw;
+   display: grid;
+   grid-template-columns: repeat(3, 22vw);
+   grid-column-gap: 2vw; 
+   grid-row-gap: 3.5vh;
+}
+
+.article img {
+   width: 22vw;
+   height: 25vh;
+}
+
+#article_parg {
+   position: relative;
+   font-size: 18px;
+   font-weight: bold;
+}
+#article_sub_parg {
+   position: relative;
+  text-align: justify;
+   font-size: 13.5px;
+   line-height: 2vh;
+   font-style: 'Mukta';
+}
+
+
+.wrapper{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    position: relative;
+    top: 15vh;
+}
+.wrapper_text {
+    font-size: 20px;
+    position: relative;
+    top: 12vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    color: rgb(255,0,0);
+}
+.button{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+
+}
+.button:before,
+.button:after{
+content: '';
+position: absolute;
+width: 100px;
+height: 100px;
+border: 2px solid red;
+top: -10px ;
+left: 50%;
+z-index: 1;
+transition: all 0.8s ease 0s;
+margin: 0px 0px 0px -40px ;
+
+
+}
+.button:before{
+    animation: rotate 20s infinite linear;
+}
+.button:after{
+    animation: rotate 25s infinite linear;
+}
+.button-text{
+    position: relative;;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 50px ;
+    border-radius: 50px;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 11px;
+    transition: all 1s ease 0s;
+    top: 0;
+overflow: hidden;
+}
+.button-text:before,
+.button-text:after{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: #3443eb;
+transition: all 0.8s ease 0s;
+}
+.button-text:before{
+    left: 0;
+    z-index: 2;
+
+}
+.button-text:after{
+    right: 0;
+
+}
+.button-text span {
+
+position: relative;
+z-index: 2;
+
+}
+.button:hover:before,
+.button:hover:after{
+    left: 100%;
+    opacity: 0;
+
+
+} 
+.button:hover .button-text:before{
+    width: 100%;
+}
+.button:hover .button-text:before,
+.button:hover .button-text:after{
+background-color: #18b5a4;
+
+}
+.button:hover .button-text{
+    top: -10px;
+    color: #fff;
+    box-shadow: 0 5px  0px #0c5b52;
+    transition: all 0.5s ease 0.2s
+}
+.button:active .button-text{
+    top: -7px;
+    transition: all 0.1s ease 0s;
+    box-shadow: 0 2px 0px 0 #0c5b52;
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+footer  {
+   width: 100%;
+   height: 75vh;
+   background-color: #2c2d2e;
+   position: relative;
+   top: 20vh;
+   display: grid;
+   grid-template-columns: repeat(3,15vw);
+   grid-column-gap: 4vw;
+   color: #a2a3a6;
+}
+footer a {
+    text-decoration: none;
+    color: #a2a3a6;
+}
+footer a:hover {
+
+    color: #fff;
+    transition: 0.1s;
+}
+.links .icons img {
+   width: 2.1vw;
+}
+
+.links {
+   position: relative;
+top: 3vh;
+      left: 10vw;
+}
+.links img {
+width: 1.1vw;
+color: #fff;
+
+}
+.links__parg {
+    color: #fff;
+}
+
+
+
+.map__card {
+    position: relative;
+    top: -35vh;
+    left: 55vw;
+}
+#map {
+    width: 27vw;
+    height: 40vh;
+    position: relative;
+    top: 4vh;
+    left: 7vw;
+}
+
+
+/*EXTRA SMALL <=576px*/
+ @media screen and (max-width: 576px) {
+    
+.menu {
+    position: fixed;
+    z-index: 1;
+    width: 100vw;
+      height: 6vh;
+}
+.menu_main a {
+    font-size: 12px;
+    height: 7vh;
+    width: 12vw;
+        padding: 9px 4px 3px 4px;
+        margin: 0px 1px 1px 1px;
+            text-align: center;
+}
+
+
+section {
+    width: 100%;
+    height: 60vh;
+    background: url("images/cosmos.jpg") no-repeat left top;
+    position: relative;
+    
+}
+
+
+section h1 {
+position: relative;
+top: 25vh;
+left: 27vw;
+    font-size: 35px;
+}
+section h3 {
+    z-index: 1;
+    color: #fff;
+position: relative;
+top: 25vh;
+left: 27vw;
+    font-size: 16px;
+}
+
+.cosmo_info {
+position: relative;
+top: 30vh;
+width: 100%;
+padding-left: 20px;
+height: 20vh;
+}
+.cosmo_info p {
+    font-size: 12px;
+    width: 90%;
+    text-align: left;
+    padding-top: 5px;
+}
+
+
+.articles {
+   position: relative;
+      top: 10vh;
+      left: 25vw;
+   display: grid;
+   grid-template-columns: repeat(1, 50vw); 
+   grid-row-gap: 3.5vh;
+}
+
+.article img {
+   width: 50vw;
+   height: 25vh;
+}
+
+
+footer  {
+   width: 100%;
+   height: 80vh;
+   position: relative;
+   top: 20vh;
+   display: grid;
+   grid-template-columns: repeat(3,30vw);
+   grid-column-gap: 1vw;
+   color: #a2a3a6;
+   font-size: 14px;
+}
+.links .icons img {
+   width: 5vw;
+}
+
+.links {
+   position: relative;
+top: 3vh;
+      left: 10vw;
+}
+
+.map__card {
+    position: relative;
+    top: 5vh;
+    left: 15vw;
+}
+#map {
+    width: 70vw;
+    height: 30vh;
+}
+
+.wrapper{
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    position: relative;
+    top: 15vh;
+}
+.wrapper_text {
+    font-size: 14px;
+    position: relative;
+    top: 12vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    color: rgb(255,0,0);
+}
+.button{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+
+}
+
+.button:before,
+.button:after{
+position: absolute;
+width: 20vw;
+height: 20vw;
+border: 2px solid red;
+left: 50%;
+z-index: 1;
+top: -3vh;
+}
+
+
+.button-text{
+    position: relative;;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10vw;
+    border-radius: 50px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 11px;
+    transition: all 1s ease 0s;
+    top: 0;
+overflow: hidden;
+}
+.button-text:before,
+.button-text:after{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: #3443eb;
+transition: all 0.8s ease 0s;
+}
+
+  }
+
+
+
+
+
+
+
+
+/*768px */
+@media only screen and (min-width: 768px)  {
+    
+.menu {
+    width: 100vw;
+      height: 7vh;
+}
+.menu_main a {
+    font-size: 14px;
+    height: 7vh;
+    width: 14vw;
+        padding: 9px 3px 3px 3px;
+        margin: 0px 0px 0px 0px;
+            text-align: center;
+}
+
+
+section {
+    width: 100%;
+    height: 90vh;
+    background: url("images/cosmos.jpg") no-repeat left top;
+    position: relative;
+    
+}
+
+
+section h1 {
+position: relative;
+top: 35vh;
+left: 30vw;
+    font-size: 45px;
+}
+section h3 {
+    z-index: 1;
+    color: #fff;
+position: relative;
+top: 35vh;
+left: 30vw;
+    font-size: 20px;
+}
+
+.cosmo_info {
+position: relative;
+top: 57vh;
+width: 100%;
+padding-left: 20px;
+height: 20vh;
+}
+.cosmo_info p {
+    font-size: 14px;
+    width: 70%;
+    text-align: left;
+    padding-top: 5px;
+}
+
+
+.articles {
+   position: relative;
+      top: 10vh;
+      left: 8vw;
+   display: grid;
+   grid-template-columns: repeat(2, 40vw); 
+   grid-row-gap: 3.5vh;
+}
+
+.article img {
+   width: 40vw;
+   height: 25vh;
+}
+
+
+footer  {
+   width: 100%;
+   height: 80vh;
+   position: relative;
+   top: 20vh;
+   display: grid;
+   grid-template-columns: repeat(3,30vw);
+   grid-column-gap: 1vw;
+   color: #a2a3a6;
+   font-size: 14px;
+}
+.links .icons img {
+   width: 4.5vw;
+}
+
+.links {
+   position: relative;
+top: 3vh;
+      left: 10vw;
+}
+
+.map__card {
+    position: relative;
+    top: 5vh;
+    left: 15vw;
+}
+#map {
+    width: 70vw;
+    height: 30vh;
+}
+
+
+.wrapper{
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    position: relative;
+    top: 15vh;
+}
+.wrapper_text {
+    font-size: 16px;
+    position: relative;
+    top: 12vh;
+}
+
+  }
+
+
+
+  @media only screen and (min-width: 1024px) {
+       .menu {
+    width: 100vw;
+      height: 5vh;
+}
+.menu_main a {
+    font-size: 16px;
+    height: 6vh;
+    width: 14vw;
+        padding: 9px 3px 3px 3px;
+        margin: 0px 0px 0px 0px;
+}
+
+
+section {
+    width: 100%;
+    height: 90vh;
+    background: url("images/cosmos.jpg") no-repeat left top;
+    position: relative;
+}
+
+
+section h1 {
+position: relative;
+top: 30vh;
+left: 35vw;
+    font-size: 45px;
+}
+section h3 {
+    z-index: 1;
+    color: #fff;
+position: relative;
+top: 30vh;
+left: 35vw;
+    font-size: 23px;
+}
+
+.cosmo_info {
+position: relative;
+top: 56.5vh;
+width: 100%;
+padding-left: 20px;
+height: 20vh;
+}
+.cosmo_info p {
+    font-size: 14px;
+    width: 70%;
+    text-align: left;
+    padding-top: 5px;
+}
+
+
+.articles {
+   position: relative;
+      top: 10vh;
+      left: 10vw;
+   display: grid;
+   grid-template-columns: repeat(3, 25vw);
+   grid-column-gap: 2vw;
+   grid-row-gap: 3.5vh;
+}
+
+.article img {
+   width: 25vw;
+   height: 25vh;
+}
+
+
+footer  {
+   width: 100%;
+   height: 80vh;
+   position: relative;
+   top: 20vh;
+   display: grid;
+   grid-template-columns: repeat(3,28vw);
+   grid-column-gap: 1vw;
+   color: #a2a3a6;
+   font-size: 16px;
+}
+.links .icons img {
+   width: 4vw;
+}
+
+.links {
+   position: relative;
+top: 3vh;
+      left: 10vw;
+}
+
+.map__card {
+    position: relative;
+    top: 5vh;
+    left: 25vw;
+}
+#map {
+    width: 50vw;
+    height: 30vh;
+}
+
+
+
+.wrapper_text {
+    font-size: 18px;
+    position: relative;
+    top: 12vh;
+}
+
+
+    }
+
+
+
+
+/* 1440<= */
+@media only screen and (min-width: 1440px) {
+ 
+.menu {
+    position: fixed;
+    z-index: 1;
+    width: 100vw;
+      height: 5vh;
+}
+.menu_main {
+    list-style: none;
+    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+
+    background-color: #000;
+
+}
+.menu_main a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    height: 6vh;
+    width: 10vw;
+    text-align: center;
+    text-transform: uppercase;
+        padding: 3px 4px 3px 4px;
+    border: 1px solid black;
+    border-radius: 10px;
+        margin: 0px 1px 1px 1px;
+            text-align: center;
+}
+.menu_main a:hover {
+    background-color: #090994;
+    transition: width 0.5s ease-out; 
+}
+.menu_main li {
+    padding-right: 2px;
+    display: flex;
+    align-items: center;
+}
+
+section {
+    width: 100%;
+    height: 750px;
+    background: url("images/cosmos.jpg") no-repeat left top;
+    position: relative;
+    
+}
+section h1 {
+    z-index: 1;
+    color: #fff;
+    display: grid;
+position: relative;
+top: 30vh;
+left: 40vw;
+    font-size: 50px;
+}
+section h3 {
+    z-index: 1;
+    color: #fff;
+position: relative;
+top: 30vh;
+left: 40vw;
+    font-size: 25px;
+}
+
+.cosmo_info {
+    z-index: 1;
+    color: #c8c8fa;
+background-color: rgba(132, 132, 150, 0.5);
+position: relative;
+top: 482px;
+width: 100%;
+padding-left: 20px;
+height: 155px;
+}
+.cosmo_info p {
+    font-size: 14px;
+    font-style: 'Arial';
+    width: 555px;
+    text-align: left;
+    padding-top: 10px;
+
+}
+
+main {
+    background-color: rgba(132, 132, 150, 0.3);
+    height: 
+}
+.articles {
+   position: relative;
+      top: 15vh;
+      left: 14vw;
+   display: grid;
+   grid-template-columns: repeat(3, 22vw);
+   grid-column-gap: 2vw; 
+   grid-row-gap: 3.5vh;
+}
+
+.article img {
+   width: 22vw;
+   height: 25vh;
+}
+
+#article_parg {
+   position: relative;
+   font-size: 18px;
+   font-weight: bold;
+}
+#article_sub_parg {
+   position: relative;
+  text-align: justify;
+   font-size: 13.5px;
+   line-height: 2vh;
+   font-style: 'Mukta';
+}
+
+
+.wrapper{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    position: relative;
+    top: 15vh;
+}
+.wrapper_text {
+    font-size: 20px;
+    position: relative;
+    top: 12vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    color: rgb(255,0,0);
+}
+
+
+
+
+footer  {
+   width: 100%;
+   height: 75vh;
+   position: relative;
+   top: 20vh;
+   display: grid;
+   grid-template-columns: repeat(3,15vw);
+   grid-column-gap: 4vw;
+}
+.links .icons img {
+   width: 2.1vw;
+}
+.links img {
+width: 1.1vw;
+color: #fff;
+
+}
+.map__card {
+    position: relative;
+    top: -35vh;
+    left: 55vw;
+}
+#map {
+    width: 27vw;
+    height: 40vh;
+    position: relative;
+    top: 4vh;
+    left: 7vw;
+}
+
+  }
+
+
+
+
+
+
+
+
+
+
