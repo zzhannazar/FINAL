@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@500&family=Poppins:wght@200;300&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	    -ms-box-sizing: border-box;
+	     -o-box-sizing: border-box;
+	       -box-sizing: border-box;
+}
+
+body {
+font-family: 'Poppins', sans-serif;
+}
+.menu {
+	position: fixed;
+	z-index: 1;
+	width: 100vw;
+      height: 5vh;
+}
+.menu_main {
+    list-style: none;
+    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+
+    background-color: #000;
+
+}
+.menu_main a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 16px;
+	height: 6vh;
+	width: 10vw;
+	text-align: center;
+    text-transform: uppercase;
+        padding: 3px 4px 3px 4px;
+    border: 1px solid black;
+    border-radius: 10px;
+        margin: 0px 1px 1px 1px;
+            text-align: center;
+}
+.menu_main a:hover {
+	background-color: #090994;
+	transition: width 0.5s ease-out; 
+}
+.menu_main li {
+	padding-right: 2px;
+	display: flex;
+	align-items: center;
+}
+
+section {
+	width: 100%;
+	height: 750px;
+	background: url("images/cosmos.jpg") no-repeat left top;
+	position: relative;
+}
+section h1 {
+	z-index: 1;
+	color: #fff;
+position: relative;
+top: 300px;
+left: 35vw;
+	font-size: 50px;
+}
+section h3 {
+	z-index: 1;
+	color: #fff;
+position: relative;
+top: 220px;
+left: 550px;
+	font-size: 25px;
+}
+
+ .star {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(255,255,255,.1),
+        0 0 0 8px rgba(255,255,255,.1),
+        0 0 20px rgba(255,255,255,1);
+    animation: animate 3s linear infinite;
+}    
+ .star:before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 300px;
+    height: 1px;
+    background: linear-gradient(90deg,#fff,transparent);
+}  
+ @keyframes animate{
+    0%
+    {
+        transform: rotate(-45deg) translateX(0);
+    }
+    70%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        transform: rotate(-45deg) translateX(-1000px);
+        opacity: 0;
+    }
+}  
+.star:nth-child(1){
+    top: 0px;
+    right: 0px;
+    animation-delay: 0;
+    animation-duration: 1s;
+}
+.star:nth-child(2){
+    top: 0px;
+    right: 80px;
+    animation-delay: 0.2s;
+    animation-duration: 3s;
+}
+.star:nth-child(3){
+    top: 80px;
+    right: 0px;
+    animation-delay: 0.4s;
+    animation-duration: 2s;
+}
+.star:nth-child(4){
+    top: 0px;
+    right: 180px;
+    animation-delay: 0.6s;
+    animation-duration: 1.5s;
+}
+.star:nth-child(5){
+    top: 0px;
+    right: 400px;
+    animation-delay: 0.8s;
+    animation-duration: 2.5s;
+}
+.star:nth-child(6){
+    top: 0px;
+    right: 600px;
+    animation-delay: 1s;
+    animation-duration: 3s;
+}
+.star:nth-child(7){
+    top: 300px;
+    right: 0px;
+    animation-delay: 1.2s;
+    animation-duration: 1.75s;
+}
+.star:nth-child(8){
+    top: 0px;
+    right: 700px;
+    animation-delay: 1.4s;
+    animation-duration: 1.25s;
+}
+.star:nth-child(9){
+    top: 0px;
+    right: 1000px;
+    animation-delay: 0.75s;
+    animation-duration: 2.25s;
+}
+.star:nth-child(10){
+    top: 0px;
+    right: 450px;
+    animation-delay: 2.75s;
+    animation-duration: 2.25s;
+}    
+
+
+#phases {
+	position: relative;
+	top: 5vh;
+	margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 70%;
+}
+#phases-heading {
+	position: relative;
+	top: 5vh;
+	left: 15vw;
+	font-size: 25px;
+}
+
+#phases td, #phases th {
+  border: none;
+  padding: 8px;
+}
+#phases tr {
+	text-align: center;
+}
+#phases tr:nth-child(odd){
+	background-color: #9595e8;
+}
+
+#phases tr:hover {
+	background-color: #ddd;
+}
+
+#phases th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #3649d9;
+  color: #fff;
+}
+main {
+	
+}
+
+.moon_phases {
+   position: relative;
+      top: 13vh;
+   display: grid;
+   grid-template-columns: repeat(4, 15vw);
+   grid-column-gap: 4vw;
+margin-left: 15vw;
+width: 70vw;
+}
+.moon img {
+	width: 15vw;
+}
+.moon img:hover {
+width: 12vw;
+transition: 0.5s;
+}
+#moon_parg {
+   position: relative;
+   font-size: 18px;
+   font-weight: bold;
+   text-align: center;
+}
+
+.about_moon_phases {
+	width: 70vw;
+	margin-left: 15vw;
+	position: relative;
+	top: 20vh;
+}
+.about_moon_phases h3 {
+	color: #661c26;
+}
+
+.moon_video {
+    position: relative;
+    top: 30vh;
+    width: 70vw;
+    left: 20vw;
+}
+.video_text p{ 
+  float: left;
+  padding-top: 10px;
+  padding-left: 30px;
+  width: 15vw;
+  font-size: 14px;
+   background: #323236;
+   padding-right: 5vw;
+   padding-bottom: 17.7vh;
+   color: #fff;
+   font-style: 'Mukta';
+}
+.video_text a{
+    text-decoration: none;
+    color: #098fe3;
+}
+}
+.video {
+    float: right;
+}
+
+footer  {
+   width: 100%;
+   height: 75vh;
+   background-color: #2c2d2e;
+   position: relative;
+   top: 40vh;
+   display: grid;
+   grid-template-columns: repeat(3,15vw);
+   grid-column-gap: 4vw;
+   color: #a2a3a6;
+   margin: 0;
+}
+footer a {
+    text-decoration: none;
+    color: #a2a3a6;
+}
+footer a:hover {
+
+    color: #fff;
+    transition: 0.1s;
+}
+.links .icons img {
+   width: 2.1vw;
+}
+
+.links {
+   position: relative;
+top: 3vh;
+      left: 10vw;
+}
+.links img {
+width: 1.1vw;
+color: #fff;
+
+}
+.links__parg {
+    color: #fff;
+}
+
+
+.map__card {
+    position: relative;
+    top: -35vh;
+    left: 55vw;
+}
+#map {
+    width: 27vw;
+    height: 40vh;
+    position: relative;
+    top: 4vh;
+    left: 7vw;
+}
+
+
+
+
+
